@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.3;
+    color: black;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar{
+    background-color: #1F2937;
+    color: #F9FAF8;
+    height: 100px;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+.navbar #logo{
+    font-size: 24px;
+    font-weight: 900;
+    color: #F9FAF8;
+    cursor: pointer;
+}
+
+.navbar .navbar-links{
+    display: flex;
+}
+
+.navbar li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.navbar a:hover{
+    color: #edf0f6;
+}
+
+/* hero */
+.hero{
+    min-height: 400px;
+    color: white;
+    background-color: #1F2937;
+}
+
+.hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero .signUP-btn{
+    margin-top: 10px;
+    border: none;
+    color: #F9FAF8;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 9px 30px; 
+    background-color: #3882F6;
+}
+
+.hero h1{
+    line-height: .99;
+    font-size: 3rem;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero img{
+    max-width: 500px;
+}
+
+/* Information */
+
+.information{
+    min-height: 400px;
+}
+
+
+.information .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.information .title{
+    padding-top: 20px;
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: #1F2937;
+    margin-bottom: 25px;
+}
+
+.info-squares{
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+    text-align: center;
+}
+
+.info{
+    max-width: 200px;
+}
+
+.info img{
+    height: 190px;
+    border-radius: 10px;
+    border: 2px solid blue
+}
+
+/* Quote */
+
+.quote{
+    min-height: 400px;
+    background-color: #E5E7EB;
+    display: flex;
+    align-items: center;
+}
+
+.quote .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.quote .actualQuote{
+    font-size: 2.25rem;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.quote .author{
+    font-size: 2.25rem;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+/* Action */
+
+.action{
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.action .container{
+    border-radius: 1rem;
+    padding: 3rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+}
+
+.action .header{
+    font-size: 1.5rem;
+    color: #F9FAF8;
+}
+
+.action .sub-header{
+    font-size: 1.125rem;
+    color: #E5E7EB;
+}
+
+.action .signUP-btn{
+    border: 1px solid white;
+    color: #F9FAF8;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 9px 30px; 
+    background-color: #3882F6;
+}
+
+
+
+/* Footer */
+
+.footer{
+    background-color: #1F2937;
+    height: 100px;
+}
+
+.footer .container{
+    display: flex;
+    color: #F9FAF8;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer p{
+    font-size: 1.125rem;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 768px){
+    .navbar .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .hero .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .information .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .info-squares{
+        flex-direction: column;
+    }
+
+    
+    .quote .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .action .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .footer .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
